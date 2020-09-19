@@ -78,6 +78,10 @@ $('.mask').click(() => {
 
 $('.web-input-btn').on('click', addweb = () => {
     let name = $('.web-input-name').val()
+    if (!name) {
+        alert('请输入网站名称')
+        return false
+    }
     let url = $('.web-input-text').val()
     if (url.indexOf('http') !== 0) {
         url = 'https://' + url
