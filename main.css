@@ -112,7 +112,7 @@ form>input:nth-child(2):hover {
 }
 
 .favorites>ul {
-    margin-right: -20px;
+    /* border: 1px solid greenyellow; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
