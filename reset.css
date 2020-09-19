@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #303133;
+    border: #DCDFE6;
+    outline: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+}
+
+li {
+    list-style: none;
+}
+
+.icon {
+    min-width: 120px;
+    min-height: 120px;
+    padding: 20px;
+    color: rgba(255, 255, 255, .8);
+}
+
+input {
+    border: 1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .2);
+    color: rgba(255, 255, 255, .7);
+    outline: none;
+    min-height: 42px;
+    font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .8);
+}
