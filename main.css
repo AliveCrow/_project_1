@@ -94,7 +94,7 @@ form>input:nth-child(2):hover {
 
 @media (min-width:600px) {
     .favorites {
-        max-width: 1120px;
+        max-width: 800px;
         margin: 20px auto;
     }
     form>input:nth-child(1) {
@@ -121,17 +121,42 @@ form>input:nth-child(2):hover {
 .web-site,
 .add-web-site {
     position: relative;
-    max-width: 120px;
-    max-height: 120px;
-    margin-right: 20px;
-    margin-top: 20px;
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 80px;
+    /* border: 1px solid greenyellow; */
     /* background-color: rgba(255, 255, 255, .2); */
 }
 
 .web-ico {
-    padding: 30px;
+    max-width: 32px;
     border-radius: 2px;
+    /* background-color: rgba(255, 255, 255, .1); */
+}
+
+.web-idc {
+    max-width: 80px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s ease-in-out;
+}
+
+.web-idc:hover {
     background-color: rgba(255, 255, 255, .1);
+}
+
+.web-idc>span {
+    margin-top: 10px;
+}
+
+.icon {
+    min-width: 32px;
+    min-height: 32px;
+    margin: 24px;
+    color: rgba(255, 255, 255, .8);
 }
 
 .a-word {
@@ -142,10 +167,10 @@ form>input:nth-child(2):hover {
 
 .cancel {
     position: absolute;
-    height: 30px;
+    height: 20px;
     right: 0px;
     display: inline-block;
-    width: 30px;
+    width: 20px;
     opacity: 0;
     transition: all .25s linear;
 }
