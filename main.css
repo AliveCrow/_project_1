@@ -4,11 +4,32 @@
     left: 0;
     top: 0;
     width: 100%;
-    object-fit: cover;
+    object-fit: 150% 150%;
     height: 100%;
-    filter: blur(10px);
-    transform: scale(1.2);
     z-index: -1;
+    transform: scale(1.5);
+}
+
+@keyframes bgimgfilter {
+    0% {
+        filter: blur(2px);
+        transform: scale(1.5);
+    }
+    100% {
+        filter: blur(5px);
+        transform: scale(2);
+    }
+}
+
+@keyframes bgimgfilterOut {
+    0% {
+        filter: blur(5px);
+        transform: scale(2);
+    }
+    100% {
+        filter: blur(2px);
+        transform: scale(1.5);
+    }
 }
 
 #container {

@@ -14,6 +14,12 @@ const simplifyUrl = (url) => {
     }
     return url
 }
+$('.search-input').focusin(() => {
+    $('.bgimg').css('animation', 'bgimgfilter .2s ease-in-out forwards')
+})
+$('.search-input').focusout(() => {
+    $('.bgimg').css('animation', 'bgimgfilterOut .2s ease-in-out forwards')
+})
 
 $(".search-btn").click((e) => {
     $('form').attr('action', '//baidu.com/s?').submit()

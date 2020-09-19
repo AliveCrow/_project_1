@@ -9,6 +9,7 @@ html {
     color: #303133;
     border: #DCDFE6;
     outline: none;
+    overflow: hidden
 }
 
 body {
